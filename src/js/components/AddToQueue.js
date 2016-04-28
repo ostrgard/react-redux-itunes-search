@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+
 import { addSong } from '../reducers/player';
 
 class AddToQueue extends Component {
@@ -22,7 +23,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(AddToQueue);
+export default connect(null, mapDispatchToProps)(AddToQueue);

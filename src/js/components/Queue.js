@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { playSong } from '../reducers/player';
 
+import { playSong } from '../reducers/player';
 import { QueueItem } from './';
 
 class Queue extends Component {
@@ -50,7 +50,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Queue);
+export default connect(mapStateToProps, mapDispatchToProps)(Queue);

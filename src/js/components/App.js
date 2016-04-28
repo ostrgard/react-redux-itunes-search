@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import { Search, Results, Queue, Player } from './';
 
 export default class App extends Component {
@@ -8,18 +9,18 @@ export default class App extends Component {
         <div className="row">
           <div className="col-md-6">
             <br />
-            <h1>Search iTunes!</h1>
+            <h1>Music!</h1>
             <br />
-            <Search />
+            {false && <Search />}
           </div>
         </div>
         <div className="row">
           <div className="col-md-6">
-            <Results />
+            {false && <Results />}
           </div>
           <div className="col-md-6">
-            <Player />
-            <Queue />
+            {false && <Player />}
+            {false && <Queue />}
           </div>
         </div>
       </div>
